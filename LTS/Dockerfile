@@ -1,4 +1,4 @@
-FROM library/node:latest
+FROM library/node:argon
 
 MAINTAINER Christian Ulbrich <christian.ulbrich@zalari.de>
 
