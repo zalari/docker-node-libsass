@@ -1,14 +1,10 @@
-## node-compass image
-This is an image based of the node image and adding the last stable compass for running typical JS frontend builds.
+## node-libsass image
+This is an image based of the node image and adding a global installation of node-sass for running typical JS frontend builds, that depend on node-sass which is in turn platform-dependent.
 
 ## Usage
 ```
-docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app zalari/node-compass node --version
-docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app zalari/node-compass compass --version
+docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app zalari/node-libsass node --version
 ```
 
 ## Tags
 **latest** is based on node:latest and **LTS** and **argon** are based on node:argon (i.e. node LTS).
-
-## Troubleshooting
-Building takes some time, because the latest compass is building some stuff itself. Image has not been optimized (space is cheap!)
